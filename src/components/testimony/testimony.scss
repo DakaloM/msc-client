@@ -1,0 +1,46 @@
+.testimony {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+
+    @media all and (max-width: 600px) {
+        min-height: fit-content !important;
+        
+    }
+    
+
+    .tGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: fit-content;
+        
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .extra {
+        font-family: "Teko" !important;
+        font-size: 22px;
+        color: orange;
+    }
+
+    .message {
+        color: gray;
+        font-size: 18px;
+
+        @media all and (max-width: 400px) {
+            font-size: 16px;
+            
+        }
+    }
+}
