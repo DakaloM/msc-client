@@ -26,7 +26,6 @@ const Post = () => {
             try {
                 const res = await axios.get(`${url}posts/${postId}`);
                 setPost(res.data)
-                console.log(res.data)
                 setLoading(false)
             } catch (error) {
                 console.log(error)
@@ -44,7 +43,6 @@ const Post = () => {
             try {
                 const res = await axios.get(`${url}posts?category=${post.category}`);
                 setPosts(res.data)
-                console.log("categoryPost: " , res.data)
                 setLoading(false)
             } catch (error) {
                 console.log(error)
@@ -52,16 +50,16 @@ const Post = () => {
             }
             
         }
-        fetchPost();
+        post && fetchPost();
     }, [post])
     // Fetch all Posts
     useEffect(() => {
+        
         const fetchPost = async() => {
             setLoading(true)
             try {
                 const res = await axios.get(`${url}posts`);
                 setList(res.data)
-                console.log("categoryPost: " , res.data)
                 setLoading(false)
             } catch (error) {
                 console.log(error)
@@ -110,13 +108,18 @@ const Post = () => {
                                 post.story && post.story.split('\n').map((item, count) => (
 
                                     count === 2 ? 
-                                    <div className="innerTad">
+                                    <div className="innerTad" key={item  + Math.random().toString(36)}>
                                         <p className="text">
                                             {item}
                                         </p>
                                     </div>
                                     :
-                                    <p>{item}</p>
+                                    item.length < 70 ?
+                                    <span className="storyTitle" key={item  + Math.random().toString(36)}>{item}</span>
+                                    :
+                                    
+                                    <p key={item  + Math.random().toString(36)}>{item}</p>
+                                    
                                 ))
                             }
                          

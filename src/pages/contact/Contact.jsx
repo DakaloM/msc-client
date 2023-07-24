@@ -20,7 +20,7 @@ const Contact = () => {
               <div className="imgContainer">
                 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.741824022368!2d28.21233107468255!3d-25.746050077361705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561f3e36f8ad7%3A0x9a6820b4f57b000d!2sPretorius%20St%2C%20Arcadia%2C%20Pretoria!5e0!3m2!1sen!2sza!4v1689249438157!5m2!1sen!2sza"
-               width={"100%"} height={"100%"} style={{ border: "none"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               width={"100%"} height={"100%"} style={{ border: "none"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div className="info">
 

@@ -148,8 +148,8 @@ const Services = () => {
                         <li>Infrastructure design and development</li>
                         <li>Cloud computingt</li>
                         <li>Cyber security</li>
-                        <li>Project planning and executiont</li>
-                        <li>Business strategy formulationt</li>
+                        <li>Project planning and execution</li>
+                        <li>Business strategy formulation</li>
                         <li>Business expansion and management</li>
                         <li>Digital marketing</li>
                         <li>Business compliance</li>

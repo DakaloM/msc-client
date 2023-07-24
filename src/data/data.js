@@ -48,7 +48,7 @@ export const steps = [
         id: 2,
         title: "Prepare",
         count: "02",
-        desc: "With you information, our team of experts will analyze, simplify and optimize your needs to create a perfect plan to move forward"
+        desc: "With your information, our team of experts will analyze, simplify and optimize your needs to create a perfect plan to move forward"
     },
     {
         id: 3,

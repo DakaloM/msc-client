@@ -58,7 +58,7 @@ const Home = () => {
             {
               products.map((item, count) => (
                 count <= 3 && 
-                <div className="item">
+                <div className="item" key={item.id}>
                   {item.icon}
 
                   <div className="info">

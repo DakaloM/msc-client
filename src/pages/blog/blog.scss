@@ -5,6 +5,15 @@
         position: relative;
         overflow-x: hidden;
 
+        .link {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
         .padding {
             padding: 100px 150px;
     

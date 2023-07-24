@@ -158,9 +158,9 @@ const Blog = () => {
                                                 alt="[business management] [software development]" />
                                             </div>
 
-                                            <div className="info">
+                                            <div className="info neqwww">
                                                 <span className="category">{item.category}</span>
-                                                <span className="title">{item.title}</span>
+                                                <Link className="link title" to={`/blog/${item._id}`}>{item.title}</Link>
                                                 <span className="date"><AccessTimeIcon className='icon'/>{formatDate(item.createdAt)}</span>
                                             </div>
                                         </motion.div>
@@ -182,7 +182,7 @@ const Blog = () => {
 
                                             <div className="info">
                                                 <span className="category">{item.category}</span>
-                                                <span className="title">{item.title}</span>
+                                                <Link className="link title" to={`/blog/${item._id}`}>{item.title}</Link>
                                                 <span className="date"><AccessTimeIcon className='icon'/>{formatDate(item.createdAt)}</span>
                                             </div>
                                         </motion.div>
@@ -204,7 +204,7 @@ const Blog = () => {
 
                                             <div className="info">
                                                 <span className="category">{item.category}</span>
-                                                <span className="title">{item.title}</span>
+                                                <Link className="link title" to={`/blog/${item._id}`}>{item.title}</Link>
                                                 <span className="date"><AccessTimeIcon className='icon'/>{formatDate(item.createdAt)}</span>
                                             </div>
                                         </motion.div>
